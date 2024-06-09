@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+    height: 100vh;
+    width: 100vw;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    background-color: #ffffff;
+    color: white;
+    width: 100%;
+    align-self: center;
+}
+
+.nav-left{
+    min-width: 15%;
+}
+
+.logo{
+    border-right: 3px solid #ccc;
+    margin: 0 2rem;
+    height: 2rem;
+    padding-right: 7rem;
+}
+
+.logo img{
+    height: 8rem;
+    width: 8rem;
+    margin-top: -2.8rem;
+    margin-left: 10rem;
+}
+
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.logo-nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.logo-nav-links img{
+    height: 3rem;
+    width: 3rem;
+    align-self: center;
+}
+
+.fld-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    grid-area: right;
+    
+}
+
+.nav-links img{
+    height: 2rem;
+    width: 2rem;
+}
+
+.help, .account{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+}
+/* 
+.help{
+    padding: .8rem;
+    border: none;
+    border-radius: 10px;
+} */
+
+.help:hover{
+    background-color: #dcdbdb;
+    transition: all .5s ease-in;
+}
+
+.account:hover{
+    background-color: #dcdbdb;
+    transition: all .5s ease-in-out;
+}
+
+.hover:hover{
+    cursor: pointer;
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    background-image: url(assets/HomeBannerImg.svg);
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 50px;
+    width: 65%;
+    height: 22%;
+}
+
+.from{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 2rem;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+    border-radius: 50px 0 0 50px;
+}
+
+.from img{
+    height: 2.5rem;
+    width: 3rem;
+}
+
+.to-where{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 10rem;
+    padding-left: 2rem;
+    border-right: 1px solid #ccc;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.to-where img{
+    height: 2.5rem;
+    width: 3rem;
+}
+
+.date{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-right: 4rem;
+    padding-left: 2rem;
+    /* border-right: 1px solid #ccc; */
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+.date img{
+    height: 2.5rem;
+    width: 2.6rem;
+}
+
+input{
+    border: none;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    font-size: 1.8rem;
+    outline: none;
+}
+
+input::placeholder{
+    color: #000;
+    font-weight: 500;
+}
+
+input[type="date"]{
+    outline: none;
+}
+
+.search-bus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    background-color: #fff;
+    height: 100%;
+    width: 140%;
+    border: none;
+    background-color: #d84e55;
+    color: white;
+    border-radius: 0 50px 50px 0;
+    font-size: 2rem;
+    font-weight: 600;
+}
