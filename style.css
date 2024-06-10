@@ -31,22 +31,20 @@ a{
 
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     height: 5.6rem;
     background-color: #ffffff;
     color: white;
-    width: 105%;
-    align-self: center;
+    width: 100%;
     z-index: 1;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    gap: 4rem;
 }
 
 .nav-left{
-    min-width: 15%;
-    border-right: 1px solid #ccc;
-    margin-left: -1rem;
+    width: 15%;
 }
 
 .logo{
@@ -59,9 +57,13 @@ a{
 }
 
 .logo img{
-    height: 3rem;
     width: 5rem;
     margin-left: 10rem;
+}
+
+.nav-division{
+    border: 1px solid #ccc;
+    height: 1.6rem;
 }
 
 .nav-right{
@@ -69,7 +71,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     padding-right: 10%;
 }
 
@@ -88,6 +90,7 @@ a{
 .fld-column{
     display: flex;
     flex-direction: column;
+    gap: .5rem;
 }
 
 .nav-links{
@@ -659,3 +662,51 @@ input[type="date"]{
     margin-right: .3rem;
 }
 
+.primo-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+    gap: 1.6rem;
+}
+
+.primo-card-row{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    width: 70%;
+}
+
+.primo-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    background-color: #606060;
+    /* height: 11rem;
+    width: 33rem; */
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    gap: 1.2rem;
+    background-image: linear-gradient(to right, rgb(38, 72, 153), rgb(125, 70, 134));
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.primo-card h4{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.primo-card p{
+    color: #fff;
+    font-size: .725rem;
+}
