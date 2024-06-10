@@ -272,7 +272,6 @@ input[type="date"]{
     background-color: #f5f5f5e5;
     border-radius: 30px;
     box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .trending-header{
@@ -285,7 +284,7 @@ input[type="date"]{
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    overflow-y:hidden;
+    overflow-y: hidden;
     overflow-x: scroll;
     border-radius: 20px;
     scrollbar-width: thin;
@@ -471,3 +470,191 @@ input[type="date"]{
     top: 60px;
     left: 20px;
 }
+
+.review-section{
+    display: flex;
+    align-self: center;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-image: url(assets/appInstallbg.svg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: right center;
+    border-radius: 35px;
+    color: #fff;
+}
+
+.review-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: row;
+    width: 60%;
+    border: none;
+    border-radius: 10px;
+}
+
+.review-left{
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+}
+
+.review-header{
+    font-size: 2.2rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.bg-white-box{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    padding-left: 2.2rem;
+    padding-right: 3rem;
+    border-radius: 16px;
+    gap: 2rem;
+    min-width: 105%;
+    color: #000;
+}
+
+.features-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-left: -1.1rem;
+    gap: 1rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+}
+
+.feature{
+    display: flex;
+    
+    flex-direction: row;
+    gap: .5rem;
+}
+
+.app-review{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.left-star-sect, .right-star-sect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+}
+
+.review-mid-div{
+    border: 1px solid #ccc;
+    height: 5rem;
+}
+
+.star-sect{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #535353;
+    gap: .3rem;
+}
+
+.star-sect img{
+    height: 1rem;
+    width: 1rem;
+}
+
+.download-numbers{
+    display: flex;
+    color: #606060;
+    font-size: .825rem;
+}
+
+.app-name{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #535353;
+}
+
+.review-right{
+    display: flex;
+    flex-direction: column;
+    max-width: 55%;
+    margin-top: auto;
+}
+
+.input-phone-num{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.whatsapp_no{
+    display: flex;
+    background-color: white;
+    height: 64px;
+    border-radius: 16px;
+    gap: .5rem;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.country-code{
+    color: #606060;
+    padding-left: 1rem;
+}
+
+
+.whatsapp_no input::placeholder{
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #606060;
+    font-size: .825rem;
+    font-weight: 600;
+}
+
+.get-link{
+    border: none;
+    padding: none;
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 80%;
+    border: none;
+    border-radius: 0 16px 16px 0;
+}
+
+.download-app-options{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 80%;
+    gap: 2rem;
+}
+
+.scanner, .download-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scanner img, .download-app img{
+    margin-right: .3rem;
+}
+
