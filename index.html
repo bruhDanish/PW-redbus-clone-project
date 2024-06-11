@@ -54,6 +54,9 @@
                         <img src="assets/from.png" alt="">
                         <input type="text" placeholder="From">
                     </div>
+                    <div class="change-img">
+                        <img src="assets/change.png" alt="" class="change">
+                    </div>
                     <div class="to-where">
                         <img src="assets/to.png" alt="">
                         <input type="text" placeholder="To">
@@ -257,7 +260,7 @@
                         <div class="input-phone-num">
                             <form class="whatsapp_no">
                                 <p class="country-code">+91 </p>
-                                <input placeholder="whatsApp number" type="text" name="" id="">
+                                <input placeholder="whatsApp number" type="text" pattern=".{10,10}" oninput="this.value=this.value.replace(/[^0-9]/g,'');" maxlength="10">
                                 <button class="get-link">Get Link</button>
                             </form>
                         </div>
@@ -312,6 +315,50 @@
                 </div>
                 
             </div>
+
+            <div class="partners-section">
+                <div class="partner-header">
+                    <h3>
+                        partnered with
+                    </h3>
+                </div>
+                <div class="rtcs-sect">
+                    <p>25 RTCs</p>
+                    <button class="view-all-rtc"> view all</button>
+                </div>
+                <div class="rtc-img-sect">
+                    <div class="rtc-imgs">
+                        <img src="assets/10283.png" alt="">
+                        <p>APSRTC</p>
+                    </div>
+                    <div class="rtc-imgs">
+                        <img src="https://static.abhibus.com/content-pages/op-logos/gsrtc.png" alt="" class="rtc-img-size">
+                        <p>GSRTC</p>
+                    </div>
+                    <div class="rtc-imgs">
+                        <img src="https://static.abhibus.com/content-pages/op-logos/tsrtc.png" alt="" class="rtc-img-size">
+                        <p>TSRTC</p>
+                    </div>
+                    <div class="rtc-imgs">
+                        <img src="https://static.abhibus.com/content-pages/op-logos/osrtc.png" alt="" class="rtc-img-size">
+                        <p>OSRTC</p>
+                    </div>
+                    <div class="rtc-imgs">
+                        <img src="https://static.abhibus.com/content-pages/op-logos/TNSTC.png" alt="" class="rtc-img-size">
+                        <p>TNSTC</p>
+                    </div>
+                    <div class="rtc-imgs">
+                        <img src="https://static.abhibus.com/content-pages/op-logos/BSRTC.png" alt="" class="rtc-img-size">
+                        <p>BSRTC</p>
+                    </div>
+                    <div class="rtc-imgs">
+                        <img src="https://static.abhibus.com/content-pages/op-logos/JKSRTC.png" alt="" class="rtc-img-size">
+                        <p>JKSRTC</p>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </div>
