@@ -34,7 +34,7 @@ a{
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    height: 5.6rem;
+    height: 6rem;
     background-color: #ffffff;
     color: white;
     width: 100%;
@@ -78,6 +78,7 @@ a{
 .logo-nav-links{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -85,6 +86,24 @@ a{
     height: 1.5rem;
     width: 2rem;
     align-self: center;
+}
+
+.bus-logo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    background: #d84e55;
+    padding: .8rem;
+    border-radius: 8px;
+}
+
+.bus-logo > img{
+    filter: grayscale(1) brightness(3);
+}
+
+.bus-tkts{
+    color: white;
 }
 
 .fld-column{
@@ -823,11 +842,69 @@ input::-webkit-inner-spin-button {
 
 .operators li{
     border-radius: 30px;
-    transition: background-color .5s ease-in;
+    transition: background-color .2s ease-in;
     padding: .5rem;
 }
 
 .operators li:hover{
     cursor: pointer;
     background-color: #e3e3e3;
+}
+
+.faq-section{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 2rem;
+    margin: 5rem auto;
+}
+
+.faq-header{
+    font-size: 2rem;
+}
+
+.questions-links-list{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+}
+
+.questions-links-list li{
+    font-size: 1rem;
+    padding-bottom: .6rem;
+}
+
+.questions-links-list li:hover{
+    cursor: pointer;
+    border-bottom: 3px solid #d5d5d5;
+}
+
+.questions-links-list li:first-child{
+    border-bottom: 3px solid #d84e55;
+    color: #d84e55;
+}
+
+.faq-questions{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 98%;
+}
+
+.questions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: .875rem;
+    border: 1px solid #ececec;
+    border-radius: 16px;
+    padding: 1.3rem 1rem 1.3rem 1rem;
+    align-items: center;
+    transition: box-shadow .1s ease-in;
+}
+
+.questions:hover{
+    box-shadow: 5px 10px 10px .1px rgba(0, 0, 0, 0.1);
 }
