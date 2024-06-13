@@ -908,3 +908,116 @@ input::-webkit-inner-spin-button {
 .questions:hover{
     box-shadow: 5px 10px 10px .1px rgba(0, 0, 0, 0.1);
 }
+
+.global-presence-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.global-presence-header{
+    font-size: 2.4rem;
+    font-weight: 520;
+}
+
+.global-presence-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.countries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.redDeals-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 80%;
+    margin: 5rem auto;
+}
+
+.redDeals-header{
+    font-size: 2.4rem;
+    color: #2a2a2a;
+}
+
+.readDeals-desc{
+    color: #4a4a4a;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.readDeals-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-image:url(https://st.redbus.in/seo/common/redDeals_bg.webp);
+    background-size: contain;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    padding: 3rem;
+}
+
+.redDeals-logo{
+    width: 3.5rem;
+}
+
+.redDeals-right{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redDeals-offer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.redDeals-offer p{
+    font-size: 1.4rem;
+    font-weight: 550;
+    color: #4a4a4a;
+}
+
+.redDeals-exclusives{
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    color: #535353;
+    font-size: .955rem;
+}
+
+.red-text{
+    color: #d84e55;
+    margin-right: .3rem;
+}
+
+.division{
+    border: 1px solid #2a2a2a;
+    margin: 0 .6rem;
+}
+
+.redDeals-booking{
+    padding: 1rem 1.8rem 1rem 1.8rem;
+    color: #fff;
+    border: none;
+    background-color: #d84e55;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: 600;
+}
