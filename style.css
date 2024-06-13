@@ -5,6 +5,7 @@
     font-family: "Montserrat", sans-serif;
 }
 
+
 body{
     background-color: #ffffff;
     height: 100vh;
@@ -908,6 +909,7 @@ input::-webkit-inner-spin-button {
 .questions:hover{
     box-shadow: 5px 10px 10px .1px rgba(0, 0, 0, 0.1);
 }
+<<<<<<< HEAD
 
 .global-presence-section{
     display: flex;
@@ -1021,3 +1023,5 @@ input::-webkit-inner-spin-button {
     font-size: .9rem;
     font-weight: 600;
 }
+=======
+>>>>>>> 151c3c28b3d546cf85b0c0309016a76f7172e076
