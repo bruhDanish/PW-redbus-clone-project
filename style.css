@@ -250,14 +250,14 @@ a{
 @media screen and (max-width:585px) {
    
     .header{
-        margin-top: 1.5rem;
+        margin-top: 4rem;
         font-size: .9rem;
     }
    
     .search-bar{
         flex-direction: column;
         width: 75vw;
-        margin-top: .8rem;
+        margin-top: 5rem;
     }
 
     .from, .to-where, .date{
@@ -292,10 +292,6 @@ a{
     .hero{
         margin-bottom: 15rem;
     }
-}
-
-@media screen and (max-width:) {
-    
 }
 
 .from{
@@ -425,17 +421,17 @@ input[type="date"]{
 @media screen and (max-width:480px) {
     
     .trending-section{
-        margin-top: -12rem;
+        margin-top: -16rem;
     }
 
     .hero .header{
-        margin-top: 1rem;
+        margin-top: 5rem;
         font-size: .8rem;
     }
 
     .search-bar{
-        margin-top: 1rem;
-        width: 70vw;
+        margin-top: 4rem;
+        /* width: 75vw; */
     }
 
     .from, .to-where, .date{
@@ -443,7 +439,7 @@ input[type="date"]{
     }
 
     .search-btn .search-bus{ 
-        width: 70vw;
+        /* width: 75vw; */
         padding: 1.5rem;
     }
     
@@ -498,9 +494,13 @@ input[type="date"]{
         font-size: .6rem;
         padding: 5rem 0;
     }
+
+    .offer-content h3{
+        font-size: .8rem;
+    }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
 
     .trending-section{
         width: 70vw;
@@ -529,6 +529,10 @@ input[type="date"]{
     .border-text p{
         font-size: 10vw;
     }
+
+    .offer-content h3{
+        font-size: 1.1rem;
+    }
 }
 
 .img-div{
@@ -547,10 +551,6 @@ input[type="date"]{
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
-}
-
-.offer-content h3{
-    font-size: .8rem;
 }
 
 .border-text{
@@ -601,13 +601,18 @@ input[type="date"]{
     
 .rental-section{
     display: flex;
-    width: 80%;
+    width: 80vw;
     margin: 7rem auto;
+    /* padding: 7rem 0rem; */
+    /* gap: 15rem; */
 }
 
 .rental-left{
     display: flex;
     flex-direction: column;
+    /* max-width: 50%; */
+    /* padding-right: 21rem; */
+    /* margin-right: 15rem; */
 }
 
 .rental-header{
@@ -624,7 +629,7 @@ input[type="date"]{
     display: flex;
     margin-top: 3rem;
     padding: 1rem;
-    width: 90%;
+    margin-right: 6rem;
     gap: 2rem;
     border-bottom: 1px solid #ccc;
 }
@@ -672,8 +677,7 @@ input[type="date"]{
     gap: .5rem;
     width: 48%;
     margin-top: 2rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding: .8rem 0;
     font-weight: 700;
     font-size: 1rem;
     color: #fff;
@@ -684,35 +688,76 @@ input[type="date"]{
 }
 
 .rental-right{
-    display: flex;
-    flex-direction: column;
-    min-width: 55%;
     position: relative;
     background-image: url(assets/aboutUsImg.svg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:right;
+    background-position: right;
 }
 
-.rental-options-img{
-    position: absolute;
-    height: 600px;
-    width: 300px;
-    top: 60px;
-    left: 20px;
+.rental-options-img img{
+    padding-top: 8rem;
+}
+
+@media screen and (max-width:1050px) {
+
+    .rental-right{
+        background-position: left;
+        height: 20rem;
+        margin-top: 18rem;
+    }
+
+    .rental-options-img img{
+        margin-top: -4rem;
+        width: 25rem;
+    }    
+}
+
+@media screen and (max-width:768px) {
+
+    .rental-right{
+        display: none;
+    }   
+
+    .rental-left{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+
+    .rental-left{
+        width: 70vw;
+    }
+
+    .rental-mode{
+        border-bottom: none;
+    }
+
+    .sidebyside-modes{
+        flex-direction: column;
+    }
+
+    .book-cab-bus{
+        width: 80vw;
+    }
+
+    .rental-desc p{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 .review-section{
     display: flex;
-    align-self: center;
+    /* align-self: center; */
     width: 90%;
     margin: 2rem auto;
-    padding: 2rem;
     background-image: url(assets/appInstallbg.svg);
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: right center;
-    border-radius: 35px;
+    background-position: center;
+    border-radius: 30px;
     color: #fff;
 }
 
@@ -721,16 +766,17 @@ input[type="date"]{
     justify-content: center;
     align-items: center;
     gap: 4rem;
-    flex-direction: row;
-    width: 60%;
-    border: none;
-    border-radius: 10px;
+    /* margin: 0 auto; */
+    padding: 5rem;
+    /* flex-direction: row; */
+    /* width: 60%; */
+    /* border: none; */
+    /* border-radius: 10px; */
 }
 
 .review-left{
     display: flex;
     flex-direction: column;
-    max-width: 45%;
 }
 
 .review-header{
@@ -744,25 +790,24 @@ input[type="date"]{
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-top: 1.5rem;
-    padding-top: 1.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 2rem;
     padding-left: 2.2rem;
     padding-right: 3rem;
     border-radius: 16px;
     gap: 2rem;
-    min-width: 105%;
     color: #000;
 }
 
 .features-div{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     margin-left: -1.1rem;
     gap: 1rem;
-    padding-top: 2rem;
+    /* padding-top: 2rem; */
     padding-left: 1rem;
 }
 
@@ -791,7 +836,7 @@ input[type="date"]{
 
 .review-mid-div{
     border: 1px solid #ccc;
-    height: 5rem;
+    /* height: 5rem; */
 }
 
 .star-sect{
@@ -824,7 +869,7 @@ input[type="date"]{
 .review-right{
     display: flex;
     flex-direction: column;
-    max-width: 55%;
+    /* max-width: 55%; */
     margin-top: auto;
 }
 
@@ -878,10 +923,52 @@ input::-webkit-inner-spin-button {
 
 .download-app-options{
     display: flex;
-    align-items: start;
-    justify-content: center;
+    /* align-items: center; */
+    /* justify-content: start; */
     width: 80%;
     gap: 2rem;
+}
+
+@media screen and (max-width:890px) {
+
+    .review-section{
+        background-position: ;
+    }
+
+    .review-content{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .review-left, .review-right{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .review-content{
+        margin-left: -2.8rem;
+    }
+    
+    .bg-white-box{
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .app-review{
+        flex-direction: column;
+    }
+
+    .left-star-sect:first-child{
+        margin-bottom: -2rem;
+    }
+    .review-content{
+        margin-left: -3.5rem;
+    }
+    .download-app-options{
+        margin-left: -3.1rem;
+    }
 }
 
 .scanner, .download-app{
