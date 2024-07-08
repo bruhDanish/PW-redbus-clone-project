@@ -181,6 +181,7 @@ a{
 .hamburger{
     width: 2rem;
     display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width:768px) {
@@ -576,6 +577,11 @@ input[type="date"]{
     padding: .335rem;
     border: 1px dashed #fff;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.coupon img{
+    cursor: pointer;
 }
 
 .offer-1{
@@ -644,6 +650,7 @@ input[type="date"]{
     align-items: center;
     gap: 1rem;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .mid-line{
@@ -687,7 +694,7 @@ input[type="date"]{
     background-color: #d84e55;
     border: none;
     border-radius: 15px;
-
+    cursor: pointer;
 }
 
 .rental-right{
@@ -922,6 +929,7 @@ input::-webkit-inner-spin-button {
     width: 80%;
     border: none;
     border-radius: 0 16px 16px 0;
+    cursor: pointer;
 }
 
 .download-app-options{
@@ -983,6 +991,7 @@ input::-webkit-inner-spin-button {
 
 .scanner img, .download-app img{
     margin-right: .3rem;
+    cursor: pointer
 }
 
 .primo-section{
@@ -1287,6 +1296,7 @@ input::-webkit-inner-spin-button {
     border-radius: 8px;
     font-size: .9rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 @media screen and (max-width:700px) {
@@ -1380,6 +1390,7 @@ input::-webkit-inner-spin-button {
     padding: 1.3rem 1rem 1.3rem 1rem;
     align-items: center;
     transition: box-shadow .1s ease-in;
+    cursor: pointer;
 }
 
 .questions:hover{
@@ -1441,7 +1452,6 @@ input::-webkit-inner-spin-button {
 
     .footer-logo-div{
         width: 120%;
-        /* padding-left: 8rem; */
     }
 }
 
@@ -1449,7 +1459,6 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-direction: column;
     gap: .3rem;
-    /* width: 20%; */
     font-size: .935rem;
     color: #535353;
     padding-right: 8rem;
@@ -1468,6 +1477,12 @@ input::-webkit-inner-spin-button {
     .links-div{
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 2rem;
+    }
+
+    .footer-links{
+        justify-content: flex-end;
+        width: 80vw;
+        /* margin: 0 4.5rem; */
     }
 }
 
@@ -1493,6 +1508,7 @@ input::-webkit-inner-spin-button {
 
 .footer-links-list li{
     font-size: .9rem;
+    cursor: pointer;
 }
 
 .copyright-section{
