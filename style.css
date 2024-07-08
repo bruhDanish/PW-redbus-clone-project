@@ -1443,16 +1443,6 @@ input::-webkit-inner-spin-button {
         width: 120%;
         /* padding-left: 8rem; */
     }
-
-    .links-section{
-    }
-}
-
-@media screen and (max-width:600px) {
-    .links-div{
-        width: 90vw;
-        overflow-x: scroll;
-    }
 }
 
 .footer-logo-div{
@@ -1470,7 +1460,15 @@ input::-webkit-inner-spin-button {
 }
 
 .links-div{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media screen and (max-width:600px) {
+    .links-div{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 2rem;
+    }
 }
 
 .links-section{
